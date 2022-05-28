@@ -24,6 +24,7 @@ body {
     width: 1440px;
     gap: 30px;
     font-size: 13px;
+    margin: 10vh auto;
 }
 
 .profile-daniel div p {
