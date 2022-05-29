@@ -7,11 +7,13 @@
 }
 @font-face {
     font-family: 'Barlow Semi Condensed';
-    src: url(/font/BarlowSemiCondensed-Light.ttf);
+    src: url(/font/BarlowSemiCondensed-SemiBold.ttf);
 }
 
 body {
     background-color: hsl(210, 46%, 95%);
+    width: 1440px;
+    margin: 14vh auto;
 }
 
 .grid-container {
@@ -21,10 +23,8 @@ body {
     grid-template-areas: 
     "daniel daniel jonathan kira"
     "jeanette patrick patrick kira";
-    width: 1440px;
     gap: 30px;
     font-size: 13px;
-    margin: 10vh auto;
 }
 
 .profile-daniel div p {
@@ -47,7 +47,7 @@ body {
     color: hsl(0, 0%, 100%);
 }
 .name2 {
-    color: hsl(219, 29%, 14%);
+    color: hsl(217, 19%, 35%);
 }
 
 .verif {
@@ -55,7 +55,7 @@ body {
     opacity: 50%;
 }
 .verif2 {
-    color: hsl(219, 29%, 14%);
+    color: hsl(217, 19%, 35%);
     opacity: 50%;
 }
 
@@ -156,16 +156,22 @@ body {
     font-size: 13px;
 }
 .profile-daniel {
+    background-image: url(/img/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+    background-size: 23%;
     background-color: hsl(263, 55%, 52%);
     grid-area: daniel;
     border-radius: 10px;
     padding: 40px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
 }
 
 .profile-jonathan {
@@ -173,9 +179,11 @@ body {
     grid-area: jonathan;
     border-radius: 10px;
     padding: 40px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
 }
 
 .profile-kira {
@@ -183,9 +191,11 @@ body {
     grid-area: kira;
     border-radius: 10px;
     padding: 40px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
 }
 
 .profile-jeanette {
@@ -193,9 +203,11 @@ body {
     grid-area: jeanette;
     border-radius: 10px;
     padding: 40px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
 }
 
 .profile-patrick {
@@ -203,7 +215,9 @@ body {
     grid-area: patrick;
     border-radius: 10px;
     padding: 40px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
 }
