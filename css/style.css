@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: 'Barlow Semi Condensed';
     font-weight: 500;
 }
@@ -9,13 +9,11 @@
     font-family: 'Barlow Semi Condensed';
     src: url(/font/BarlowSemiCondensed-SemiBold.ttf);
 }
-
 body {
     background-color: hsl(210, 46%, 95%);
     width: 1440px;
     margin: 14vh auto;
 }
-
 .grid-container {
     display: grid;
     grid-template-columns: 3;
@@ -26,30 +24,48 @@ body {
     gap: 30px;
     font-size: 13px;
 }
-
-.profile-daniel div p {
+.profile {
+    border-radius: 10px;
+    padding: 40px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
+}
+.daniel {
+    background-image: url(/img/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+    background-size: 23%;
+    background-color: hsl(263, 55%, 52%);
+    grid-area: daniel;
+}
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: jonathan;
+}
+.kira {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: kira;
+}
+.jeanette {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: jeanette;
+}
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: patrick;
+}
+.profile div p {
     margin-left: 20px;
 }
-.profile-jonathan div p {
-    margin-left: 20px;
-}
-.profile-kira div p {
-    margin-left: 20px;
-}
-.profile-jeanette div p {
-    margin-left: 20px;
-}
-.profile-patrick div p {
-    margin-left: 20px;
-}
-
 .name {
     color: hsl(0, 0%, 100%);
 }
 .name2 {
     color: hsl(217, 19%, 35%);
 }
-
 .verif {
     color: hsl(0, 0%, 100%);
     opacity: 50%;
@@ -58,88 +74,24 @@ body {
     color: hsl(217, 19%, 35%);
     opacity: 50%;
 }
-
-.profile-daniel div {
+.profile div {
     display: flex;
     align-items: center;
 }
-.profile-jonathan div {
-    display: flex;
-    align-items: center;
-}
-.profile-kira div {
-    display: flex;
-    align-items: center;
-}
-.profile-jeanette div {
-    display: flex;
-    align-items: center;
-}
-.profile-patrick div {
-    display: flex;
-    align-items: center;
-}
-.profile-daniel div div{
+.profile div div{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
-.profile-jonathan div div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.profile-kira div div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.profile-jeanette div div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.profile-patrick div div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.profile-daniel div img {
+.profile div img {
     float: left;
     border-radius: 50%;
 }
-.profile-jonathan div img {
-    float: left;
-    border-radius: 50%;
-}
-.profile-kira div img {
-    float: left;
-    border-radius: 50%;
-}
-.profile-jeanette div img {
-    float: left;
-    border-radius: 50%;
-}
-.profile-patrick div img {
-    float: left;
-    border-radius: 50%;
-}
-
-
-
-
-
 .h2a {
     color: hsl(0, 0%, 100%);
     font-weight: 600;
 }
-
 .h2b {
     color: hsl(217, 19%, 35%);
 }
@@ -147,77 +99,9 @@ body {
     opacity: 70%;
     color: hsl(0, 0%, 100%);
     font-weight: 500;
-    font-size: 13px;
 }
 .quotationsb {
     opacity: 70%;
     color: hsl(217, 19%, 35%);
     font-weight: 500;
-    font-size: 13px;
-}
-.profile-daniel {
-    background-image: url(/img/bg-pattern-quotation.svg);
-    background-repeat: no-repeat;
-    background-position: 80% 0%;
-    background-size: 23%;
-    background-color: hsl(263, 55%, 52%);
-    grid-area: daniel;
-    border-radius: 10px;
-    padding: 40px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
-}
-
-.profile-jonathan {
-    background-color: hsl(217, 19%, 35%);
-    grid-area: jonathan;
-    border-radius: 10px;
-    padding: 40px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
-}
-
-.profile-kira {
-    background-color: hsl(0, 0%, 100%);
-    grid-area: kira;
-    border-radius: 10px;
-    padding: 40px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
-}
-
-.profile-jeanette {
-    background-color: hsl(0, 0%, 100%);
-    grid-area: jeanette;
-    border-radius: 10px;
-    padding: 40px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
-}
-
-.profile-patrick {
-    background-color: hsl(219, 29%, 14%);
-    grid-area: patrick;
-    border-radius: 10px;
-    padding: 40px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 65px 96px 58px -69px rgb(25 33 46 / 26%);
 }
